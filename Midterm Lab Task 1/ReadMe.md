@@ -18,9 +18,9 @@
 * Mapped the Normalized tables as a Physical Data Model
 
 # Here's the screenshot of my output before I started data cleaning
+
+# Here's the screenshot of my output after I started data cleaning 
 ![Sample Output](image/cleaned.png)
-# Here's the screenshot of my output after I started data cleaning (See screenshot)
-* Sample Output .
 
 # Here's the Physical Data Model
 * Sample Output .
