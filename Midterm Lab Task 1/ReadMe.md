@@ -17,8 +17,8 @@
 * Perform 3 NF
 * Mapped the Normalized tables as a Physical Data Model
 
-# Here's the screenshot of [my output before I started data cleaning](Midterm%20Lab%20Task%201/image/cleaned.png)
-
+# Here's the screenshot of my output before I started data cleaning
+![Sample Output](image/cleaned.png)
 # Here's the screenshot of my output after I started data cleaning (See screenshot)
 * Sample Output .
 
