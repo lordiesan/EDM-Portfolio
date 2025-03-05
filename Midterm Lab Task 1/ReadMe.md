@@ -17,8 +17,7 @@
 * Perform 3 NF
 * Mapped the Normalized tables as a Physical Data Model
 
-# Here's the screenshot of my output before I started data cleaning (See screenshot)
-* Sample Output
+# Here's the screenshot of [my output before I started data cleaning](image/Erd.png)
 
 # Here's the screenshot of my output after I started data cleaning (See screenshot)
 * Sample Output .
