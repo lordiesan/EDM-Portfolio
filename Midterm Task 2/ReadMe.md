@@ -28,7 +28,7 @@ duplicate (Queries pane)
 
 # Normalization
 * Dependencies and References of the QUERIES
-![Sample Output](ERD%20Query.JPG)
+![Sample Output](IMAGE/ERD%20Query.JPG)
 
 # Here's the screenshot of my output before I started data cleaning
 ![Sample Output](image/Uncleaned.png)
