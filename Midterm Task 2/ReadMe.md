@@ -31,9 +31,16 @@ duplicate (Queries pane)
 ![Sample Output](IMAGE/ERD%20Query.JPG)
 
 # Here's the screenshot of my output before I started data cleaning
-![Sample Output](image/Uncleaned.png)
+![Sample Output](IMAGE/BEfore.JPG)
 # Here's the screenshot of my output after I started data cleaning 
-![Sample Output](image/cleaned.png)
+* Uncleaned DS Jobs
+![Sample Output](IMAGE/Uncleaned.JPG)
 
-# Here's the Physical Data Model
-![Sample Output](image/Erd.png)
+# Sal by Role Type dupl
+![Sample Output](IMAGE/Sal%20by%20Role%20Type%20Dupl.JPG)
+
+# Sal by Size ref
+![Sample Output](IMAGE/Sal%20by%20Sze%20Ref.JPG)
+# Sal by State ref
+![Sample Output](IMAGE/Sal%20by%20State%20Ref.JPG)
+
