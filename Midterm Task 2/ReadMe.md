@@ -9,19 +9,26 @@ on generating insights that will answer the ff: questions
 3. Where Job Roles or Job Titles pay the best and least in a specific state
    
 # Data Cleaning process
-* Load the raw file
-* Fit Column and row width and height
-* TRIM extra spaces
-* Remove NULL values
-* Remove Duplicates
+* Salary Estimate Column – Remove All the characters after the ( open  parentheses) by GOING to
+* Create 2 New Columns (From the Salary Estimate) Min Sal and Max Sal
+* ADD COLUMN – Role Type
+* SPLIT COLUMNS by Delimeter
+* Select Location column (SPLIT columns by , Delimeter)
+* Copy the APPLIED steps as proof of your Data Cleaning Activities
+* Create a duplicate of the raw data Right Click Unclean DS Jobs select  
+duplicate (Queries pane)
+* Rename the duplicate with “Sal By Role Type dup”
+* Create a reference of the raw data Right Click Unclean DS Jobs  choose reference (Queries pane)
+* Rename the reference with “Sal By Role Size ref”
+* Mapping Other Files and include in the current queries
+* Create a reference of the raw data Right Click Unclean DS Jobs  choose reference (Queries pane)
+* Rename the reference with “Sal By State ref”
+* o view dependencies and References of the QUERIES
+* You Final Queries should include the ff: (Sal by Role type – dupl, Sla By size ref, state, Sal by State ref  and Uncleaned DS Jobs
 
 # Normalization
-
-
-* Performed 1NF
-* Perform Table split using 2NF
-* Perform 3 NF
-* Mapped the Normalized tables as a Physical Data Model
+* Dependencies and References of the QUERIES
+![Sample Output](image/Uncleaned.png)
 
 # Here's the screenshot of my output before I started data cleaning
 ![Sample Output](image/Uncleaned.png)
