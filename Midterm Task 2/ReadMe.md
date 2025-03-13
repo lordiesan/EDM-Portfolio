@@ -36,14 +36,14 @@ duplicate (Queries pane)
 * # Uncleaned DS Jobs
 ![Sample Output](IMAGE/Uncleaned.JPG)
 
-# Sal by Role Type
-![Sample Output]()
+# Sal by Role Type dupl
+![Sample Output](IMAGE/Sal%20by%20Role%20Type%20Dupl.JPG)
 
 # Sal by Size ref
-![Sample Output]()
+![Sample Output](IMAGE/Sal%20by%20Sze%20Ref.JPG)
 
 # Sal by State ref
-![Sample Output]()
+![Sample Output](IMAGE/Sal%20by%20Sze%20Ref.JPG)
 
 
 
