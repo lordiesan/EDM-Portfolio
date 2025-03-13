@@ -32,8 +32,19 @@ duplicate (Queries pane)
 
 # Here's the screenshot of my output before I started data cleaning
 ![Sample Output](IMAGE/BEfore.JPG)
-# Here's the screenshot of my output after I started data cleaning 
-![Sample Output](image/cleaned.png)
+# Here's the screenshot of my output after I started data cleaning
+* # Uncleaned DS Jobs
+![Sample Output](IMAGE/Uncleaned.JPG)
 
-# Here's the Physical Data Model
-![Sample Output](image/Erd.png)
+# Sal by Role Type
+![Sample Output]()
+
+# Sal by Size ref
+![Sample Output]()
+
+# Sal by State ref
+![Sample Output]()
+
+
+
+
