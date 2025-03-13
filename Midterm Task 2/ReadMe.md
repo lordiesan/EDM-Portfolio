@@ -31,7 +31,7 @@ duplicate (Queries pane)
 ![Sample Output](IMAGE/ERD%20Query.JPG)
 
 # Here's the screenshot of my output before I started data cleaning
-![Sample Output](image/Uncleaned.png)
+![Sample Output](IMAGE/BEfore.JPG)
 # Here's the screenshot of my output after I started data cleaning 
 ![Sample Output](image/cleaned.png)
 
