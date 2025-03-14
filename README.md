@@ -1,4 +1,4 @@
-# EDM-Portfolio - Bartolome
+# EDM-Portfolio
 This portfolio will contains copies of my Enterprise Data Management Lab Excercises
 ## About Me
 Hi there! I'm a first-year college student pursuing a Bachelor of Science in Information Systems. I have a passion for technology and how it can transform the way we live and work. From coding to problem-solving, I enjoy learning about the various ways information systems are integrated into businesses and everyday life.
