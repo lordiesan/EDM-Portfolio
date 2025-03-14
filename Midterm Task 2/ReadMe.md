@@ -1,39 +1,51 @@
 
 ## Midterm Lab Task 2 -  Data Cleaning and Preparation using POWER QUERY
 * Task Description:
-Company X would like to extract some useful information from the UnclenedDSJObs csv taken
-from a Job Posting site available in Kaggle. There are a lot of columns available but focus only
-on generating insights that will answer the ff: questions
-1. exWhich Job Roles pay the highest and least
-2. What size companies pay the best
-3. Where Job Roles or Job Titles pay the best and least in a specific state
+Company X wants to clean and analyze job posting data from the Uncleaned_DS_Jobs.csv dataset (from Kaggle). The goal is to answer these questions:
+
+1. Which job roles pay the most and least?
+2. Which company sizes pay the best?
+3. Where do specific job roles or titles pay the best and worst in a particular state?
    
-# Data Cleaning process
-* Salary Estimate Column – Remove All the characters after the ( open  parentheses) by GOING to
-* Create 2 New Columns (From the Salary Estimate) Min Sal and Max Sal
-* ADD COLUMN – Role Type
-* SPLIT COLUMNS by Delimeter
-* Select Location column (SPLIT columns by , Delimeter)
-* Copy the APPLIED steps as proof of your Data Cleaning Activities
-* Create a duplicate of the raw data Right Click Unclean DS Jobs select  
-duplicate (Queries pane)
-* Rename the duplicate with “Sal By Role Type dup”
-* Create a reference of the raw data Right Click Unclean DS Jobs  choose reference (Queries pane)
-* Rename the reference with “Sal By Role Size ref”
-* Mapping Other Files and include in the current queries
-* Create a reference of the raw data Right Click Unclean DS Jobs  choose reference (Queries pane)
-* Rename the reference with “Sal By State ref”
-* o view dependencies and References of the QUERIES
-* You Final Queries should include the ff: (Sal by Role type – dupl, Sla By size ref, state, Sal by State ref  and Uncleaned DS Jobs
+# Steps Performed in Data Cleaning and Transformation:
+* <ins>Clean Salary Estimate Column:
+> <sup>Remove all characters after "(" in the Salary Estimate column and Use Transform → Extract → Text Before Delimiter and type "(".
+* <ins>Create Min and Max Salary Columns:
+> <sup>Create two new columns from Salary Estimate for Min Salary and Max Salary and Use Column from Examples → From Selection, then type values like 101 for Min Salary.
+* <ins>Create Role Type Column:
+> <sup>Categorize job titles into types like "Data Scientist", "Data Analyst", etc., using a Custom Column.
+>> ***Example:***
+```
+if Text.Contains([Job Title], "Data Scientist") then  
+"Data Scientist" 
+else if Text.Contains([Job Title], "Data Analyst") then  
+"Data Analyst" 
+else if Text.Contains([Job Title], "Data Engineer") then  
+"Data Engineer"
+else if Text.Contains([Job Title], "Machine Learning") then  
+"Machine Learning Engineer" 
+else  
+"other" 
+```
+* <ins>Fix Location Column:
+> <sup>Correct the Location column by replacing city names with state abbreviations (e.g., "California" to ", CA").\
+> Use Custom Column to replace city names, then split the column.
+* <ins>Handle Negative Values:
+> <sup>See competitors column filter all -1’s\
+See revenues column filter 0’s\
+See industry column filter -1’s 
+* <ins>Clean Company Names:
+> <sup>Remove unwanted words like "Rates" from the company name.
+* Remove Unnecessary Columns:
+> <sup>Delete columns like Description that are not needed for analysis.
 
-# Normalization
-* Dependencies and References of the QUERIES
-![Sample Output](IMAGE/ERD%20Query.JPG)
-
-# Here's the screenshot of my output before I started data cleaning
+# Screenshot of Dataset Before Cleaning and Transformation
 ![Sample Output](IMAGE/BEfore.JPG)
-# Here's the screenshot of my output after I started data cleaning
-* # Uncleaned DS Jobs
+# Final Output (Screenshot of Final Queries):
+# Normalization
+* _Dependencies and References of the QUERIES_
+![Sample Output](IMAGE/ERD%20Query.JPG)
+# Uncleaned DS Jobs(_Cleaned Data_)
 ![Sample Output](IMAGE/Uncleaned.JPG)
 
 # Sal by Role Type dupl
