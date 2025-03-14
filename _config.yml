@@ -1,5 +1,5 @@
 title: Lord 
 # logo :
 show_downloads: true
-theme: jekyll-dash
-remote_theme: pages-themes/primer@v0.2.0
+theme: slate
+remote_theme: pages-themes/merlot@v0.2.0
