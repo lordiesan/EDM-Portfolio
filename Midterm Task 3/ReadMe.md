@@ -20,7 +20,7 @@ VISUALS/Reports stated under number 2.
 
 ## Final Output (Screenshot of Final Queries):
 * **Dashboard**
-![Sample Output](Image/dashboard.PNG)
+![Sample Output](Image/lord.PNG)
 
 * **Map**
   ![Sample Output](Image/Dashboard%20map.PNG)
