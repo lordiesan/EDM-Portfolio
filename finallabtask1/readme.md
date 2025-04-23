@@ -31,7 +31,8 @@ Composite primary key (employee_id, department_id).
 > <sup> employee_id: Integer, foreign key referencing employee_id in employees.\
 project_name: String (VARCHAR) with up to 255 characters, not null.
 
-![Sample Output](IMAGE/task%204.PNG)
+![Sample Output](IMAGE/task%204.PNG) 
+
 
 # Task 5
 * <ins>Create a table named managers with the following fields: 
