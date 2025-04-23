@@ -43,4 +43,4 @@ employee_id: Integer, foreign key referencing employee_id in employees.
 ![Sample Output](IMAGE/task%205.PNG)
 
 ## **EER**
-![Sample Output](EER%20task%201.PNG)
+![Sample Output](IMAGE/EER%20task%201.PNG)
