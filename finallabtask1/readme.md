@@ -1,6 +1,6 @@
 
 ## Final Term Lab Task 1- Multi Level Company Database 
-* The following are the tasks that need to be implemented using MySQL statements. Make sure to
+The following are the tasks that need to be implemented using MySQL statements. Make sure to
 complete them in the order specified
 
 # Task 1
