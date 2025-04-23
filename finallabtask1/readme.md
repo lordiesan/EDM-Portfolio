@@ -32,7 +32,7 @@ Composite primary key (employee_id, department_id).
 > <sup> employee_id: Integer, foreign key referencing employee_id in employees.\
 project_name: String (VARCHAR) with up to 255 characters, not null.
 
-![Sample Output]() 
+![Sample Output](IMAGE/TASK%2044.PNG) 
 
 
 # Task 5
