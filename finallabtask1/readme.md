@@ -9,7 +9,7 @@ complete them in the order specified
 employee_name: String (VARCHAR) with up to 255 characters, not null.\
 manager_id: Integer, foreign key referencing employee_id in the same table (employees).
 ```
-![Sample Output](finallabtask1/IMAGE/task 1.PNG)
+![Sample Output](IMAGE/task 1.PNG)
 ```
 # Task 2
 * <ins>Create a table named departments with the following fields: 
