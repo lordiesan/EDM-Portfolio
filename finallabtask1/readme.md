@@ -11,6 +11,7 @@ manager_id: Integer, foreign key referencing employee_id in the same table (empl
 
 ![Sample Output](IMAGE/task%201.PNG)
 
+
 # Task 2
 * <ins>Create a table named departments with the following fields: 
 > <sup> department_id: Unique integer, auto-increment, primary key.\
