@@ -14,9 +14,12 @@ As I progress in my studies, I'm excited to dive deeper into areas like data man
 
 * College: City College of Angeles
 ## My Projects
+# Midterm
 * Midterm Lab Task 1: [Data Cleaning and Preparation using EXCEL](Midterm%20Lab%20Task%201)
 * Midterm Lab Task 2: [Data Cleaning and Preparation using POWER QUERY](Midterm%20Task%202)
 * Midterm Lab Task 3: [Midterm Lab Task 3. Creating PIVOT TABLE and DASHBOARD](Midterm%20Task%203)
+
+# FinalTerm
 * Final Lab Task 1: [Multi Level Company Database](finallabtask1)
 * Final Lab Task 2: [Transform ER into Relational tables](finallabtask2)
 * Final Lab Task 3: [Table Manipulation](finallabtask3)
