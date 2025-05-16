@@ -14,13 +14,13 @@ students_enrolled: Integer, not null.
 20 courses are already present. 
 ## The following are the tasks that need to be implemented using MySQL statements. Make sure to complete them in the order specified: 
 # Task 1: Retrieve all courses where students_enrolled is less than the enrollment_limit. 
-> ![Sample Output](IMAGE/1.PNG)
+> ![Sample Output](IMAGE/task%203.1/task%201.PNG)
 # Task 2: Group courses by category and calculate the total number of students enrolled for each category. 
-> ![Sample Output](IMAGE/1.PNG)
+> ![Sample Output](IMAGE/task%203.1/task2.PNG)
 # Task 3: Retrieve the courses that are fully enrolled (i.e., students_enrolled equals enrollment_limit). 
-> ![Sample Output](IMAGE/1.PNG)
+> ![Sample Output](IMAGE/task%203.1/task3.PNG)
 # Task 4: Calculate the total number of students enrolled across all courses. 
-> ![Sample Output](IMAGE/1.PNG)
+> ![Sample Output](IMAGE/task%203.1/task4.PNG)
 # Task 5: Sort courses by students_enrolled in ascending order.
-> ![Sample Output](IMAGE/1.PNG)
+> ![Sample Output](IMAGE/task%203.1/task5.PNG)
 
