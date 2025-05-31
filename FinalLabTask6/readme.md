@@ -285,7 +285,7 @@ db.users.find().pretty()
 ```
 db.posts.find().pretty()
 ```
-![Sample](/IMAGE/ftQ6.2.JPG)
+![Sample](IMAGE/ftQ6.2.JPG)
 
 3. find all posts that was authored by "GoodGuyGreg"
 ```
