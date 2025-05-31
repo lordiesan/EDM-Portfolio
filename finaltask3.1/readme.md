@@ -24,7 +24,7 @@ students_enrolled: Integer, not null.
 # Task 5: Sort courses by students_enrolled in ascending order.
 > ![Sample Output](IMAGE/task%203.1/task5.PNG)
 # SQL copy of the database and table structures
- ![Sample Output](IMAGE/task%203.1/3.1.sql)
+ ![FINALTASK3.1](IMAGE/task%203.1/3.1.sql)
 
 
 
