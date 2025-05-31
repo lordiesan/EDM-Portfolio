@@ -70,49 +70,42 @@ db.movies.find({$or:[{year:{$gt:"2010"}},{year: {$lt:"2000"}}]})
 
 ## Text Search
 
-1. find all movies that have a synopsis that contains the word "Bilbo"
-```
-db.movies.find({synopsis:{$regex:"Bilbo"}})
-```
+<ins> 1. find all movies that have a synopsis that contains the word "Bilbo"
+> db.movies.find({synopsis:{$regex:"Bilbo"}})
+
 ![Sample](IMAGE/ftaskT.1.JPG)
 
-2. find all movies that have a synopsis that contains the word "Gandalf"
-```
-db.movies.find({synopsis:{$regex:"Gandalf"}})
-```
+<ins> 2. find all movies that have a synopsis that contains the word "Gandalf"
+> db.movies.find({synopsis:{$regex:"Gandalf"}})
+
 ![Sample](IMAGE/ftaskT6.2.JPG)
 
-3. find all movies that have a synopsis that contains the word "Bilbo" and not the word "Gandalf"
-```
-db.movies.find({$and:[{synopsis:{$regex:"Bilbo"}}, {synopsis:{$not:/Gandalf/}}]})
-```
+<ins> 3. find all movies that have a synopsis that contains the word "Bilbo" and not the word "Gandalf"
+> db.movies.find({$and:[{synopsis:{$regex:"Bilbo"}}, {synopsis:{$not:/Gandalf/}}]})
+
 ![Sample](IMAGE/ftaskT6.3.JPG)
 
-4. find all movies that have a synopsis that contains the word "dwarves" or "hobbit"
-```
-db.movies.find({$or:[{synopsis:{$regex:"dwarves"}}, {synopsis:{$regex:"hobbit"}}]})
-```
+<ins> 4. find all movies that have a synopsis that contains the word "dwarves" or "hobbit"
+> db.movies.find({$or:[{synopsis:{$regex:"dwarves"}}, {synopsis:{$regex:"hobbit"}}]})
+
 ![Sample](IMAGE/ftaskT6.4.JPG)
 
-5. find all movies that have a synopsis that contains the word "gold" and "dragon"
-```
-db.movies.find({$and:[{synopsis:{$regex:"gold"}}, {synopsis:{$regex:"dragon"}}]})
-```
+<ins> 5. find all movies that have a synopsis that contains the word "gold" and "dragon"
+> db.movies.find({$and:[{synopsis:{$regex:"gold"}}, {synopsis:{$regex:"dragon"}}]})
+
 ![Sample](IMAGE/ftaskT6.5.JPG)
 
 ## Delete Documents
 
-1. delete the movie "Pee Wee Herman's Big Adventure"
-```
-db.movies.remove({_id:ObjectId("5c9f992ae5c2dfe9b3729c00")})
-```
+<ins> 1. delete the movie "Pee Wee Herman's Big Adventure"
+> db.movies.remove({_id:ObjectId("5c9f992ae5c2dfe9b3729c00")})
+
 ![Sample](IMAGE/ftaskD6.1.JPG)
 
-2. delete the movie "Avatar"
-```
-db.movies.remove({_id:ObjectId("5c9f9936e5c2dfe9b3729c01")})
+<ins> 2. delete the movie "Avatar"
+> db.movies.remove({_id:ObjectId("5c9f9936e5c2dfe9b3729c01")})
 
-```
+
 ![Sample](IMAGE/ftaskD6.2.JPG)
 
 
@@ -124,142 +117,118 @@ db.movies.remove({_id:ObjectId("5c9f9936e5c2dfe9b3729c01")})
 
 ### Insert the following documents into a `users` collection
 
-```
-username : GoodGuyGreg
+<ins> username : GoodGuyGreg
 first_name : "Good Guy"
 last_name : "Greg"
-```
-```
-db.users.insert({_id:1,username:"GoodGuyGreg", first_name:"Good Guy", last_name:"Greg"})
-```
+> db.users.insert({_id:1,username:"GoodGuyGreg", first_name:"Good Guy", last_name:"Greg"})
+
 ![Sample](IMAGE/ftaskR6.1.JPG)
 
-```
-username : ScumbagSteve
+<ins> username : ScumbagSteve
 full_name :
   first : "Scumbag"
   last : "Steve"
+> db.users.insert({_id:2, username:"ScumbagSteve", fullname:{first: "Scumbag", last:"Steve"}})
 
-```
-```
-db.users.insert({_id:2, username:"ScumbagSteve", fullname:{first: "Scumbag", last:"Steve"}})
-```
 ![Sample](IMAGE/ftaskR6.2.JPG)
 
 ### Insert the following documents into a `posts` collection
 
-```
-username : GoodGuyGreg
+<ins> username : GoodGuyGreg
 title : Passes out at party
 body : Wakes up early and cleans house
-```
-```
-db.posts.insert({username:"GoodGuyGreg", title:"Passes out at Party", body:"Raises your credit score"})
-```
+ db.posts.insert({username:"GoodGuyGreg", title:"Passes out at Party", body:"Raises your credit score"})
+
 ![Sample](IMAGE/ftaskIN6.1.JPG)
-```
-username : GoodGuyGreg
+
+<ins> username : GoodGuyGreg
 title : Steals your identity
 body : Raises your credit score
-```
-```
-db.posts.insert({ username:"GoodGuyGreg", title:"Steals your identity", body:"Raises your credit score"})
-```
+> db.posts.insert({ username:"GoodGuyGreg", title:"Steals your identity", body:"Raises your credit score"})
+
 ![Sample](IMAGE/ftaskIN6.2.JPG)
 
-```
 
-username : GoodGuyGreg
+<ins> username : GoodGuyGreg
 title : Reports a bug in your code
 body : Sends you a Pull Request
-```
-```
-db.posts.insert({username:"GoodGuyGreg", title:"Reports a bug in your code", body:"Sends you a pull request"})
-```
+> db.posts.insert({username:"GoodGuyGreg", title:"Reports a bug in your code", body:"Sends you a pull request"})
+
 ![Sample](IMAGE/ftaskIN6.3.JPG)
 
-```
-username : ScumbagSteve
+
+<ins> username : ScumbagSteve
 title : Borrows something
 body : Sells it
-```
-```
-db.posts.insert({ username:"ScumbagSteve", title:"Borrows something", body:"Sells it"})
-```
+> db.posts.insert({ username:"ScumbagSteve", title:"Borrows something", body:"Sells it"})
+
 ![Sample](IMAGE/ftaskIN6.4.JPG)
 
-```
-username : ScumbagSteve
+<ins> username : ScumbagSteve
 title : Borrows everything
 body : The end
-```
-```
-db.posts.insert({ username:"ScumbagSteve", title:"Borrows everything", body:"The end"})
-```
+> db.posts.insert({ username:"ScumbagSteve", title:"Borrows everything", body:"The end"})
+
 ![Sample](IMAGE/ftaskIN6.5.JPG)
 
-```
-username : ScumbagSteve
+<ins> username : ScumbagSteve
 title : Forks your repo on github
 body : Sets to private
-```
-```
-db.posts.insert({username:"ScumbagSteve", title:"Forks your repo on github", body:"Sets to private"})
-```
+> db.posts.insert({username:"ScumbagSteve", title:"Forks your repo on github", body:"Sets to private"})
+
 ![Sample](IMAGE/ftaskIN6.6.JPG)
 
 ### Insert the following documents into a `comments` collection
 
-```
-username : GoodGuyGreg
+<ins> username : GoodGuyGreg
 comment : Hope you got a good deal!
 post : [post_obj_id]
-```
-where [post_obj_id] is the ObjectId of the `posts` document: "Borrows something"
-```
-db.comments.insert({ username:"GoodGuyGreg", comment:"Hope you got a good deal!", post:ObjectId("5ca0b7e96435f98b5901f463")})
-```
+
+> where [post_obj_id] is the ObjectId of the `posts` document: "Borrows something"
+
+> db.comments.insert({ username:"GoodGuyGreg", comment:"Hope you got a good deal!", post:ObjectId("5ca0b7e96435f98b5901f463")})
+
 ![Sample](IMAGE/ftINC6.1.JPG)
-```
-username : GoodGuyGreg
+
+<ins> username : GoodGuyGreg
 comment : What's mine is yours!
 post : [post_obj_id]
-```
-where [post_obj_id] is the ObjectId of the `posts` document: "Borrows everything"
-```
-db.comments.insert({username:"GoodGuyGreg", comment:"What's mine is yours!", post:ObjectId("5ca0b9706435f98b5901f46a")})
-```
+
+> where [post_obj_id] is the ObjectId of the `posts` document: "Borrows everything"
+
+> db.comments.insert({username:"GoodGuyGreg", comment:"What's mine is yours!", post:ObjectId("5ca0b9706435f98b5901f46a")})
+
 ![Sample](IMAGE/ftINC6.2.JPG)
-```
-username : GoodGuyGreg
+
+<ins> username : GoodGuyGreg
 comment : Don't violate the licensing agreement!
 post : [post_obj_id]
-```
-where [post_obj_id] is the ObjectId of the `posts` document: "Forks your repo on github
-```
-db.comments.insert({username:"GoodGuyGreg", comment:"Don't violate the licensing agreement!", post:ObjectId("5ca0b8766435f98b5901f467")})
-```
+
+> where [post_obj_id] is the ObjectId of the `posts` document: "Forks your repo on github
+
+> db.comments.insert({username:"GoodGuyGreg", comment:"Don't violate the licensing agreement!", post:ObjectId("5ca0b8766435f98b5901f467")})
+
 ![Sample](IMAGE/ftINC6.3.JPG)
 
-```
-username : ScumbagSteve
+
+<ins> username : ScumbagSteve
 comment : It still isn't clean
 post : [post_obj_id]
-```
-where [post_obj_id] is the ObjectId of the `posts` document: "Passes out at party"
-```
-db.comments.insert({username:"ScumbagSteve", comment:"It still isn't clean", post:ObjectId("5ca0b8546435f98b5901f466")})
-```
+
+> where [post_obj_id] is the ObjectId of the `posts` document: "Passes out at party"
+
+> db.comments.insert({username:"ScumbagSteve", comment:"It still isn't clean", post:ObjectId("5ca0b8546435f98b5901f466")})
+
 ![Sample](IMAGE/ftINC6.4.JPG)
-```
-username : ScumbagSteve
+
+<ins> username : ScumbagSteve
 comment : Denied your PR cause I found a hack
 post : [post_obj_id]
-```
-where [post_obj_id] is the ObjectId of the `posts` document: "Reports a bug in your code"
-```
-db.comments.insert({username:"ScumbagSteve", comment:"Denied your PR cause I found a hack", post:ObjectId("5ca0b9256435f98b5901f469")})
-```
+
+> where [post_obj_id] is the ObjectId of the `posts` document: "Reports a bug in your code"
+
+> db.comments.insert({username:"ScumbagSteve", comment:"Denied your PR cause I found a hack", post:ObjectId("5ca0b9256435f98b5901f469")})
+
 ![Sample](IMAGE/ftINC6.5.JPG)
 
 
@@ -270,49 +239,49 @@ db.comments.insert({username:"ScumbagSteve", comment:"Denied your PR cause I fou
 
 ## Querying related collections
 
-1. find all users
-```
-db.users.find().pretty()
-```
+<ins> 1. find all users
+
+> db.users.find().pretty()
+
 ![Sample](IMAGE/ftQ6.1.JPG)
 
-2. find all posts
-```
-db.posts.find().pretty()
-```
+<ins> 2. find all posts
+
+> db.posts.find().pretty()
+
 ![Sample](IMAGE/ftQ6.2.JPG)
 
-3. find all posts that was authored by "GoodGuyGreg"
-```
-db.posts.find({username:"GoodGuyGreg"})
-```
+<ins> 3. find all posts that was authored by "GoodGuyGreg"
+
+> db.posts.find({username:"GoodGuyGreg"})
+
 ![Sample](IMAGE/ftQ6.3.JPG)
 
-4. find all posts that was authored by "ScumbagSteve"
-```
-db.posts.find({username:"ScumbagSteve"})
-```
+<ins> 4. find all posts that was authored by "ScumbagSteve"
+
+> db.posts.find({username:"ScumbagSteve"})
+
 ![Sample](IMAGE/ftQ6.4.JPG)
 
-5. find all comments
-```
-db.comments.find().pretty()
-```
+<ins> 5. find all comments
+
+> db.comments.find().pretty()
+
 ![Sample](IMAGE/ftQ6.5.JPG)
 
-6. find all comments that was authored by "GoodGuyGreg"
-```
-db.comments.find({username:"GoodGuyGreg"})
-```
+<ins> 6. find all comments that was authored by "GoodGuyGreg"
+
+> db.comments.find({username:"GoodGuyGreg"})
+
 ![Sample](IMAGE/ftQ6.6.JPG)
 
-7. find all comments that was authored by "ScumbagSteve"
-```
-db.comments.find({username:"ScumbagSteve"})
-```
+<ins> 7. find all comments that was authored by "ScumbagSteve"
+
+> db.comments.find({username:"ScumbagSteve"})
+
 ![Sample](IMAGE/ftQ6.7.JPG)
 
-8. find all comments belonging to the post "Reports a bug in your code"
+<ins> 8. find all comments belonging to the post "Reports a bug in your code"
 ![Sample](IMAGE/ftQ6.8.JPG)
 
 
