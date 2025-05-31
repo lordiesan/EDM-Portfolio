@@ -53,21 +53,21 @@ db.movies.find({$or:[{year:{$gt:"2010"}},{year: {$lt:"2000"}}]})
 
 ## Update Documents
 
-> 1. add a synopsis to "The Hobbit: An Unexpected Journey" : "A reluctant hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home - and the gold within it - from the dragon Smaug."
+* 1. add a synopsis to "The Hobbit: An Unexpected Journey" : "A reluctant hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home - and the gold within it - from the dragon Smaug."
 ```
 db.movies.update({_id:ObjectId("5c9f98e5e5c2dfe9b3729bfe")}, {$set:{synopsis:"A reluctant hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home - and the gold within it - from the dragon Smaug."}})
 
 ```
 ![Sample](IMAGE/tasku6.1.JPG)
 
-> 2. add a synopsis to "The Hobbit: The Desolation of Smaug" : "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring."
+* 2. add a synopsis to "The Hobbit: The Desolation of Smaug" : "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring."
 
 ```
 db.movies.update({_id:ObjectId("5c9fa42ae5c2dfe9b3729c03")}, {$set:{synopsis:"The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring."}})
 ```
 ![Sample](IMAGE/ftasku6.2.JPG)
 
-> 3. add an actor named "Samuel L. Jackson" to the movie "Pulp Fiction"
+* 3. add an actor named "Samuel L. Jackson" to the movie "Pulp Fiction"
 ```
 db.movies.update({_id:ObjectId("5c9f983ce5c2dfe9b3729bfc")}, {$push:{actors:"Samuel L. Jackson"}})
 ```
@@ -75,13 +75,13 @@ db.movies.update({_id:ObjectId("5c9f983ce5c2dfe9b3729bfc")}, {$push:{actors:"Sam
 
 ## Text Search
 
-> 1. find all movies that have a synopsis that contains the word "Bilbo"
+1. find all movies that have a synopsis that contains the word "Bilbo"
 ```
 db.movies.find({synopsis:{$regex:"Bilbo"}})
 ```
 ![Sample](IMAGE/ftaskT.1.JPG)
 
-> 2. find all movies that have a synopsis that contains the word "Gandalf"
+2. find all movies that have a synopsis that contains the word "Gandalf"
 ```
 db.movies.find({synopsis:{$regex:"Gandalf"}})
 ```
