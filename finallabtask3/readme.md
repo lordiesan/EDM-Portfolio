@@ -37,4 +37,4 @@ Product 10: "Speakers", 9.99
 > ![Sample Output](IMAGE/4.PNG)
 
 ## **EER**
-![Sample Output](IMAGE/EER%20task%203.PNG)
+[Sample Output](IMAGE/EER%20task%203.PNG)
