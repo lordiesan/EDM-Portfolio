@@ -5,7 +5,7 @@
 4. Open the democodes.sql, and you may try executing all the examples using the hrd.sql file
 
 5. AFTER the practice codes…. Perform the required SQL statements of the ff: use inventory.sql for this. 
-> [FianlLabTask5](IMAGE/ftask5)
+> [FianlLabTask5](IMAGE/lordftask5.sql)
 
 6. Print screen the appropriate sql and output per item
 
