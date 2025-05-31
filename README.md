@@ -23,5 +23,6 @@ As I progress in my studies, I'm excited to dive deeper into areas like data man
 * Final Lab Task 1: [Multi Level Company Database](finallabtask1)
 * Final Lab Task 2: [Transform ER into Relational tables](finallabtask2)
 * Final Lab Task 3: [Table Manipulation](finallabtask3)
-* Final Lab Task :
-* Final Lab Task :
+* Final Lab Task 3.1:[]()
+* Final Lab Task 5:[]()
+* Final Lab Task 6:[]()
