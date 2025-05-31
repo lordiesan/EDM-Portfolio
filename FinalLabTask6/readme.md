@@ -1,4 +1,4 @@
-## Final Lab Task 6 - # MongoDB Practice
+## Final Lab Task 6 - MongoDB Practice
 
 Part 1. MongoDB Exercise in mongo shell
 
